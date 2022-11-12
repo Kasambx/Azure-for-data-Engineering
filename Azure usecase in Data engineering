@@ -1,0 +1,65 @@
+Azure cosmos db - Api's in cosmos:
+Sql Api 
+Mongo DB API- semistructured data 
+CAssandra APi - wide columns 
+Gremlin API - graph databases 
+Table API
+Azure blob - storage of data cheaper.
+
+Data ingestion
+To ingest data in cosmos DB use azure data factory create an application that writes data into Azure Cosmos DB through its API, upload JSON documents or directly edit the document.
+
+Queries 
+create UDF(user defined functions) or use javascript query API 
+
+
+Azure SQL database 
+supports relational data and unstructured formats e.g XML data.
+Used because it provides (OLTP) that scales on demmand
+use languages e.g python whic are supported
+use azure data factory
+
+
+Azure Synapse analytics
+brings togther data warehousing and big data analytics
+if you want to performs big data analytics and transfromation 
+
+Azure stream analytics
+used to process stremed data easpecially from iot, web logs, remote patient monitoring, and Point of sale systems
+Batch systems process groups of data that are stored in an Azure Blob store. They do this in a single job that runs at a predefined interval. Don't use batch systems for business intelligence systems that can't tolerate the predefined interval. For example, an autonomous vehicle can't wait for a batch system to adjust its driving. Similarly, a fraud-detection system must decline a questionable financial transaction in real time. 
+Data ingestion - done through Azure event hub, azure iot hub and azure blob storage
+a) azure event hub-designed for high data throughput, it uses a partioned consumer model to scale out your data stream 
+b)azure iot hub- enrich  relationship between devices and back end systems
+Data Processing- to process data with inputs and outputs .Inputs are provided by event hibs , iot hubs azure storage stream analytics .Outputs include azure blob, Sql database, Azure Datalake storage and azure Cosmos Db
+Queries - to perform queries use simple stream analytics query language using simple sql.
+
+Azure HD insights
+used to ingest process and analyze big data, it supports batch processing, data warehousing, IOT and data science.
+its keys features are hadoop , Hbase (nosql database for hadoop), storn distributed realitime anlytics system , kafka paltform for datapipelines.
+INgesting data is done through the ETL operation/orchestrate hive queries in Azure data factory
+Data processing done through spark and hadoop 
+Queries doen using spark Sql
+
+Use extract transform Load technique to ingest data into Synapse 
+Use SQLBulkCopy APi as a bulk copy tool or prefarably polybase 
+Use SQL for querying
+ 
+Data bricks 
+one click stream line workflows and an interactive spark environment. You will be programming using scala, python, java
+
+
+Data Factory
+Cloud integration service that orchestrates data flows (pipelines) the movement of data btwn data stores
+Data factory transforms data through services like Azure HDinsight, Hadoop, spark and azure machine learning publish it to data stores such as Azure synapse analytics so business intelligence applications can consume the data.
+You can use data factory to organize data into data storea, lakes 
+
+
+Azure Purview 
+Helps govern on premises multicloud software-as-a-service(Saas) data.Easily create holistic up-to-date map of your data landscape with automated discovery, sensitive data classification and end to end data lineage.
+
+
+
+
+
+
+
